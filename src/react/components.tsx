@@ -22,6 +22,7 @@ export const CodeFrame = ({ code, children, lang, meta } : CodeProps) => {
   <Card mb='1.25rem' borderRadius='4px'>
       {children}
       <Button
+        size='xs'
         position='absolute'
         right={4}
         top={4}
