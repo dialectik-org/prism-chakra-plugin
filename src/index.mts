@@ -37,8 +37,9 @@ const loadPluginFiles = (pluginDirectory: string) => {
 export const PluginProvider : IPluginProvider = {
   getPlugin : (arg ?: any) => {
     // __dirname is .../node_modules/@dialectik/prism-plugin/lib
-    const modulesDir = join(__dirname, '..', '..', '..');
-    //console.log(modulesDir)
+    //const modulesDir = join(__dirname, '..', '..', '..');
+    const modulesDir = join(__dirname, '..', 'node_modules');
+    console.log(modulesDir)
     if (arg !== undefined && arg?.length) {
       (arg as string[]).forEach(plugin => {
         console.log("Prism plugin is loading '" + plugin + "' plugin")

@@ -37,7 +37,7 @@
  /* Code blocks */
  [data-theme='dark'] pre[class*="language-"] {
    padding: 1em;
-   margin: 0.5em 0;
+   margin: 0;
    overflow: auto;
  }
 
