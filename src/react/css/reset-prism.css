@@ -1,0 +1,10 @@
+/* Reset Chakra UI styles for pre tags with language-* class */
+pre[class^="language-"] {
+  font-family: var(--chakra-fonts-mono);
+  font-size: var(--chakra-fontSizes-md);
+}
+
+/* Reset Chakra UI styles for code tags following pre tags with language-* class */
+pre[class^="language-"] > code {
+  all: revert;
+}
